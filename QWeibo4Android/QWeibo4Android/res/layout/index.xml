@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+   	  
+   	   <ScrollView xmlns:android="http://schemas.android.com/apk/res/android" 
+	        android:layout_width="fill_parent" 
+	        android:layout_height="fill_parent" 
+	        android:scrollbars="vertical" 
+	        android:fadingEdge="vertical" 
+	        android:layout_weight="1.0"> 
+        <TextView android:layout_width="fill_parent" 
+            android:layout_height="wrap_content" 
+            android:id="@+id/authResult" 
+            android:paddingTop="5dip" /> 
+	  </ScrollView>
+	  
+   	  <EditText android:layout_height="wrap_content" 
+   	  			android:layout_width="fill_parent" 
+   	  			android:id="@+id/postContentText"
+   	  			android:lines="2" 
+   	  			android:hint="输入要发表的内容" />	  
+	  <Button android:layout_height="wrap_content" 
+   	  		android:text="发表微博" 
+   	  		android:layout_width="wrap_content" 
+   	  		android:id="@+id/postBtn" />
+   	  <TextView android:layout_height="wrap_content"
+   	  		android:layout_width="wrap_content" 
+   	  		android:id="@+id/postContentResult"
+   	  		android:text="发表微博成功!" 
+   	  		android:visibility="invisible" />
+   	  		
+   	  <EditText android:layout_height="wrap_content" 
+   	  			android:layout_width="fill_parent" 
+   	  			android:id="@+id/postPicText"
+   	  			android:lines="2" 
+   	  			android:hint="输入要发表的内容" />	  
+	  <Button android:layout_height="wrap_content" 
+   	  		android:text="发表图片" 
+   	  		android:layout_width="wrap_content" 
+   	  		android:id="@+id/postPicBtn" />
+   	  <TextView android:layout_height="wrap_content"
+   	  		android:layout_width="wrap_content" 
+   	  		android:id="@+id/postPicResult"
+   	  		android:text="发表图片成功!" 
+   	  		android:visibility="invisible" />   
+   	  		
+	<Button android:layout_height="wrap_content" 
+   	  		android:text="获取timeline" 
+   	  		android:layout_width="wrap_content" 
+   	  		android:id="@+id/getTimeLineBtn" />
+	<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" 
+	        android:layout_width="fill_parent" 
+	        android:layout_height="fill_parent" 
+	        android:scrollbars="vertical" 
+	        android:fadingEdge="vertical" 
+	        android:layout_weight="1.0"> 
+			<TextView android:layout_height="wrap_content"
+   	  			android:layout_width="wrap_content" 
+   	  			android:id="@+id/getTimeLineResult"
+   	  			android:text="" />    
+	</ScrollView>
+  </LinearLayout>
+</LinearLayout>
